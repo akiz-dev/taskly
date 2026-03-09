@@ -11,7 +11,6 @@ html,
 body {
     height: 100%;
     background-color: var(--bg);
-    display: block;
 }
 /* *** */
 
@@ -32,6 +31,10 @@ body {
 
 /* mobile */
 @media screen and (max-width: 480px) {
+    html,
+    body {
+        display: block;
+    }
     /* header styles */
     header {
         box-shadow: 0px 2px 4px -4px #1E293B;

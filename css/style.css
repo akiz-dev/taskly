@@ -35,7 +35,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
 }
 
 .mobile__only__warning > h1 {
@@ -53,6 +54,10 @@ body {
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 /* *** */
+
+/* header {
+    display: none;
+} */
 
 .container {
     width: 100%;

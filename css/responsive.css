@@ -32,4 +32,159 @@ body {
 /* mobile */
 @media screen and (max-width: 780px) {
      /* code... */
+    /* apagar ao finalizar versão do desktop */
+    .aviso {
+        display: none;
+    }
+
+    header,
+    main,
+    footer {
+        display: block;
+    }
+    /* *** */
+
+    /* class aux */
+    .flex__container {
+        width: 100%;
+        /* background-color: #ccc; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 24px;
+    }
+
+    /* header styles */
+    /* classes de interação */
+    .headerScrolled {
+        background-color: var(--bg);
+    }
+
+    .headerBgColor {
+        background-color: #D2DEF8;
+    }
+
+    /* ** */
+
+    header {
+        border-bottom: 2px solid #f8fafc86;
+        /* background-color: var(--bg); */
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    #logo {
+        font-family: var(--ff-titles);
+        font-weight: bold;
+        color: var(--text-color);
+        font-size: 32px;
+    }
+
+    #logo > span,
+    #logo > i {
+        color: var(--primary);
+    }
+
+    #btnMenuClose {
+        display: none;
+    }
+
+    #navbarHeader {
+        position: absolute;
+        left: 0;
+        top: 97px;
+
+        width: 100%;
+        background-color: var(--bg);
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 24px;
+
+        display: none;
+    }
+
+    #navbarHeader a {
+        color: var(--text-color);
+        font-family: var(--ff-text);
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    #navbarHeader > ul {
+        width: 100%;
+    }
+
+    #navbarHeader > ul > li > a {
+        /* background-color: #22C55E; */
+        width: 100%;
+        display: block;
+        padding: 24px 0;
+        padding-left: 24px;
+ 
+        border-bottom: 1px solid #1e293b2a;
+
+        transition: color 0.3s ease-out;
+    }
+
+    #navbarHeader > ul > li:nth-child(4) > a {
+        border: none;
+    }
+
+    #navbarHeader > ul > li > a:hover {
+        color: var(--primary);
+    }
+
+    #navbarHeader > #btnLogin,
+    #navbarHeader > #btnCta {
+         display: block;
+        margin: auto;
+        text-align: center;
+        width: 90%;        
+        padding: 15px 0;
+        border-radius: 8px;
+        transition: background-color 0.3s ease-out, color 0.3s ease-out;
+    }
+
+    #navbarHeader > #btnLogin {
+        border: 2px solid var(--primary);
+        width: 90%;;
+        color: var(--primary);
+    }
+
+    
+    #navbarHeader > #btnLogin:hover {
+        color: var(--bg);
+        background-color: var(--primary);
+    }
+
+    #navbarHeader > #btnCta {
+        color: var(--bg);
+        background-color: var(--primary);
+        margin-top: 10px;
+        transition: 0.3s ease-in-out;
+    }
+
+    #navbarHeader > #btnCta:hover {
+        transform: translateY(-2px);
+        box-shadow: 0px 0px 31px -15px #2563EB;
+    }
+
+    /* botões de interatividade do menu */
+    #btnMenuMobile,
+    #btnMenuClose {
+        font-size: 32px;
+        cursor: pointer;
+        color: var(--text-color);
+    }
+
+
+    /* main styles */
+    main {
+        padding-top: 120px;
+    }
 }

@@ -31,7 +31,6 @@ body {
 
 /* mobile */
 @media screen and (max-width: 780px) {
-     /* code... */
     /* apagar ao finalizar versão do desktop */
     .aviso {
         display: none;
@@ -47,7 +46,6 @@ body {
     /* class aux */
     .flex__container {
         width: 100%;
-        /* background-color: #ccc; */
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -63,12 +61,10 @@ body {
     .headerBgColor {
         background-color: #D2DEF8;
     }
-
     /* ** */
 
     header {
         border-bottom: 2px solid #f8fafc86;
-        /* background-color: var(--bg); */
 
         position: fixed;
         top: 0;
@@ -120,7 +116,6 @@ body {
     }
 
     #navbarHeader > ul > li > a {
-        /* background-color: #22C55E; */
         width: 100%;
         display: block;
         padding: 24px 0;
@@ -181,7 +176,6 @@ body {
         cursor: pointer;
         color: var(--text-color);
     }
-
 
     /* main styles */
     main {

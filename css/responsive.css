@@ -33,6 +33,11 @@ body {
 
 /* mobile */
 @media screen and (max-width: 780px) {
+
+    body {
+        display: block;
+
+    }
     
     .flex_container_header {
         padding: 15px;

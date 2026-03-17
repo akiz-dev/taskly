@@ -36,3 +36,38 @@ ul {
     --ff-text: "Inter", sans-serif;
     /* *** */
 }
+
+/* class aux */
+.flex_container_header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 980px;
+    margin: auto;
+    padding: 0 2%;
+}
+/* *** */
+
+header > .flex_container_header >  #logo {
+    color: var(--text-color);
+    font-family: var(--ff-text);
+    font-size: 24px;
+    font-weight: 900;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    /* gap: 6px; */
+}
+
+#logo > i, 
+#logo > span {
+    color: var(--primary);
+}
+
+
+main {
+    background-color: #FFFFFF;
+}

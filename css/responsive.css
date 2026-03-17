@@ -10,7 +10,9 @@
 html,
 body {
     height: 100%;
-    background-color: #D2DEF8;
+    /* background-color: #D2DEF8; */
+
+    background-image: linear-gradient(to right top, #fafafa, #f4f4f9, #eeeef9, #e6e9f8, #dee4f8, #dae2f8, #d6e0f8, #d2def8, #d2def8, #d2def8, #d2def8, #d2def8);
 }
 /* *** */
 
@@ -31,5 +33,63 @@ body {
 
 /* mobile */
 @media screen and (max-width: 780px) {
-    /* code... */
+    
+    .flex_container_header {
+        padding: 15px;
+        border-bottom: 1px solid #fafafa67;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+
+    .flex_container_header.scrolled {
+        background-color: #fafafa81;
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 8px 41px -26px #0F172A;
+    }
+
+    .flex_container_header.menu_open {
+        background-color: #0f172a5d;
+        transition: background-color 0.4s ease-out;
+    }
+
+    header > .flex_container_header >  #navbarHeader {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        padding: 24px;
+        
+
+        background-color: var(--bg);
+    }
+
+    #btnMenuMobileBars,
+    #btnMenuMobileX {
+        cursor: pointer;
+        color: var(--text-color);
+        font-size: 32px;
+        padding: 6px;
+        border-radius: 6px;
+
+        transition: background-color 0.3s ease-out;
+    }
+
+    #btnMenuMobileBars:hover,
+    #btnMenuMobileX:hover {
+        background-color: #c9d2e9;
+    }
+
+    /* esconde botão de fechar o menu no mobile */
+    #btnMenuMobileX {
+        display: none;
+    }
+
+    #hero {
+        padding-top: 100px;
+    }
+   
 }

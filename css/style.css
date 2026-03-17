@@ -10,7 +10,6 @@
 html,
 body {
     height: 100%;
-    display: none; /*apagar essa linha depois de finalizar a versão desktop*/
 }
 
 a {

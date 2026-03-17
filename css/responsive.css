@@ -34,11 +34,6 @@ body {
 /* mobile */
 @media screen and (max-width: 780px) {
 
-    body {
-        display: block;
-
-    }
-    
     .flex_container_header {
         padding: 15px;
         border-bottom: 1px solid #fafafa67;
@@ -93,8 +88,146 @@ body {
         display: none;
     }
 
-    #hero {
-        padding-top: 100px;
+    /* hero section styles */
+    section#hero {
+        padding-top: 120px;
+    }
+
+    /* bubble section global */
+    .bubble_section {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 0;
+        text-align: center;
+        max-width: 95%;
+        margin: auto;
+        border-radius: 50px;
+
+        box-shadow: 0px 10px 10px -17px #1E293B;
+    }
+
+    .bubble_section > i {
+        font-size: 8px;
+    }
+    /* *** */
+
+    #hero > .bubble_section {
+        background-color: var(--bg);
+        margin: auto;
+        color: var(--highlight);
+    }
+
+    #hero > .bubble_section > i {
+        opacity: 60%;
+
+        animation-name: bulletAnim;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    /* animation bullet bubble section#hero */
+    @keyframes bulletAnim {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.2);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    #hero > .bubble_section > p {
+        font-weight: bold;
+        font-size: 14px;
+        font-family: var(--ff-text);
+    }
+
+    #hero > .grid_container {
+        display: grid;
+        grid-template-rows: repeat(3,auto);
+        grid-template-columns: 1fr;
+        /* gap: 20px; */
+
+        padding: 20px 24px;
     }
    
+    #hero > .grid_container > .column1,
+    #hero > .grid_container > .column2,
+    #hero > .grid_container > .column3  {
+        padding: 20px 0;
+    }
+
+    /* text content hero styles */
+    #hero > .grid_container > .column1 > .text_content_hero {
+        text-align: center;
+    }
+
+    #hero > .grid_container > .column1 > .text_content_hero > h1 {
+        font-family: var(--ff-titles);
+        color: var(--text-color);
+        font-weight: 800;
+        font-size: 32px;
+    }
+
+    #hero > .grid_container > .column1 > .text_content_hero > h1 > span {
+        color: var(--primary);
+    }
+
+        #hero > .grid_container > .column1 > .text_content_hero > p {
+            color: var(--text-color);
+            opacity: 50%;
+            font-family: var(--ff-text);
+            padding: 15px 0;
+            font-size: 18px;
+            line-height: 28px;
+        }
+    /* *** */
+    
+    /* buttons hero styles */
+    #hero > .grid_container > .column1 > .buttons_hero_wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 24px 0 ;
+    }
+
+    #hero > .grid_container > .column1 > .buttons_hero_wrapper > #btnCtaHero,
+    #hero > .grid_container > .column1 > .buttons_hero_wrapper > #btnFuncionalidadesHero {
+        font-family: var(--ff-text);
+        font-weight: 600;
+        padding: 15px 30px;
+        border-radius: 8px;
+    }
+
+    #hero > .grid_container > .column1 > .buttons_hero_wrapper > #btnCtaHero {
+        background-color: var(--primary);
+        color: var(--bg);
+        transition: 0.3s ease-out;
+    }
+
+    #hero > .grid_container > .column1 > .buttons_hero_wrapper > #btnFuncionalidadesHero {
+        border: 2px solid var(--primary);
+        color: var(--primary);
+        transition: 0.3s ease-out;
+
+    }
+
+    #btnCtaHero:hover {
+        box-shadow: 0px 0px 23px -11px #2563EB;
+        transform: translateY(-2px);
+    }
+
+    #hero > .grid_container > .column1 > .buttons_hero_wrapper > #btnFuncionalidadesHero:hover {
+        background-color: var(--primary);
+        color: var(--bg);
+    }
 }

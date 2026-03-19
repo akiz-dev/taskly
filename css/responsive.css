@@ -62,9 +62,66 @@ body {
         left: 0;
         width: 100%;
         padding: 24px;
-        
+
 
         background-color: var(--bg);
+    }
+
+    #navbarHeader a {
+        display: block;
+        width: 100%;
+        color: var(--text-color);
+        font-family: var(--ff-text);
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    #navbarHeader > ul > li > a {
+        /* background-color: green; */
+        padding: 15px 0;
+        border-bottom: 1px solid #1e293b33;
+        transition: color 0.3s ease-out;
+    } 
+
+    #navbarHeader > ul > li:nth-child(4) > a {
+        border: none;
+    }
+
+    #navbarHeader > ul > li > a:hover {
+        color: var(--primary);
+    }
+
+    #navbarHeader > #btnLogin,
+    #navbarHeader > #btnCta {
+        padding:14px 0;
+        /* background-color: #ccc; */
+        text-align: center;
+        border-radius: 8px;
+
+        transition: 0.3s ease-out;
+    }
+
+    #navbarHeader > #btnLogin {
+        margin: 15px 0 10px 0;
+        border: 1.5px solid var(--primary);
+        color: var(--primary);
+    }
+
+    
+    #navbarHeader > #btnLogin:hover {
+        background-color: #2563EB;
+        color: var(--bg);
+
+    }
+
+    #navbarHeader > #btnCta {
+        background-color: var(--primary);
+        color: var(--bg);
+    }
+
+    #navbarHeader > #btnCta:hover {
+        box-shadow: 0px 0px 23px -11px #2563EB;
+        transform: translateY(-2px);
     }
 
     #btnMenuMobileBars,

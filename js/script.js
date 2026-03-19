@@ -7,7 +7,6 @@ window.addEventListener('scroll', ( )=> {
         flexContainerHeader.classList.add("scrolled")
     } else {
         flexContainerHeader.classList.remove("scrolled")
-
     }
 })
 
@@ -16,6 +15,7 @@ $('#btnMenuMobileBars').on('click', ()=> {
     $('#navbarHeader').slideToggle()
     $('#btnMenuMobileBars').hide();
     $('#btnMenuMobileX').slideDown()
+    
     // adicona uma classe que escurece o fundo do menu
     flexContainerHeader.classList.add("menu_open");
 
